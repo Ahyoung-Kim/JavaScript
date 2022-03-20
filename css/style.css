@@ -1,4 +1,114 @@
-.hidden { /*클래스 이름*/
+.hidden {
+    /*클래스 이름*/
     /*요소 숨기기*/
     display: none;
+}
+
+#bgImage {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    max-width: 100%;
+    min-width: 1880px;
+    max-height: 1400px;
+    min-height: 1200px;
+    z-index: -5;
+    filter: brightness(50%);
+}
+
+#login-form {
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    height: 200px;
+}
+
+#login-form input:first-child {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px;
+    width: 240px;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: all, 0.4s;
+    color: white;
+}
+
+#login-form input:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#login-form input:last-child {
+    color: gray;
+    font-size: 1.5em;
+    padding: 10px;
+    width: 90px;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: all, 0.4s;
+}
+
+#greeting {
+    font-size: 3em;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 5px 5px 3px black;
+    text-align: center;
+    height: 200px;
+}
+
+#clock {
+    text-align: center;
+    height: 150px;
+    color: rgba(255, 255, 255, 0.7);
+    text-shadow: 5px 5px 3px black;
+    margin: 10px;
+    padding: 10px;
+    font-size: 3em;
+}
+
+#todo-form {
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+}
+
+#todo-form input{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 500;
+    padding: 10px;
+    width: 500px;
+    height: 40px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#todo-list {
+    text-align: center;
+    color: white;
+}
+
+#todo-list li:hover{
+    text-align: center;
+}
+
+#quote {
+    text-align: center;
+    color: white;
+    position: fixed;
+    bottom: 20px;
+    font-size: 0.8em;
+    font-weight: 200;
+}
+
+#weather {
+    color: white;
+    position: fixed;
+    top: 20px;
+    right: 36px;
+    font-size: 0.8em;
+    font-weight: 700;
+}
+
+#weather:hover{
+    color: blue;
 }

@@ -1,6 +1,7 @@
 const toDoForm = document.getElementById("todo-form");
 const toDoInput = document.querySelector("#todo-form input");
 const toDoList = document.getElementById("todo-list");
+const toDoDiv = document.getElementById("todo-div");
 
 //todo list를 local storage에 저장하고 새로고침 할 때마다
 //local storage에서 가져와서 사라지지 않게

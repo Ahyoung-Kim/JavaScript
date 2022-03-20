@@ -7,6 +7,7 @@ const chosenImage = images[imgIdx];
 
 const bgImage=document.createElement("img");
 
+bgImage.id = "bgImage";
 bgImage.src=`img/${chosenImage}`;
 
 //const body=document.getElementsByTagName("body");

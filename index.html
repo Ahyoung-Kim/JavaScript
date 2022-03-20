@@ -7,27 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Momentum</title>
     <link rel="stylesheet" href="./css/style.css">
-    
+
 </head>
 
 <body>
-    <!--greeting-->
-    <form id="login-form" class="hidden">
-        <input required maxlength="15"
-         type="text" placeholder="What is your name?">
-         <input type="submit" value="Log In">
-    </form>
+
     <!--clock-->
     <h2 id="clock">00:00:00</h2>
+
+    <!--greeting-->
+    <form id="login-form" class="hidden">
+        <input required maxlength="15" type="text" placeholder="What is your name?">
+        <input type="submit" value="Log In">
+    </form>
     <h1 id="greeting" class="hidden"></h1>
 
     <!--todo list-->
-    <form id="todo-form">
-        <input type="text" required placeholder="Write a To Do and Press Enter">
-    </form>
-    <ul id="todo-list">
-        
-    </ul>
+    <div id="todo-div">
+        <form id="todo-form">
+            <input type="text" required placeholder="Write a To Do and Press Enter">
+        </form>
+        <ul id="todo-list">
+
+        </ul>
+    </div>
 
     <!--quote-->
     <div id="quote">
@@ -42,7 +45,7 @@
 
     <script src="./js/clock.js"></script>
     <script src="./js/greetings.js"></script>
-    <script src="./js/quotes.js"></script> 
+    <script src="./js/quotes.js"></script>
     <script src="./js/background.js"></script>
     <script src="./js/todo.js"></script>
     <script src="./js/weather.js"></script>

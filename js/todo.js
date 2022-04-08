@@ -30,6 +30,8 @@ function paintToDo(newToDoObj) {
     const span = document.createElement("span");
     const button = document.createElement("button");
 
+    button.id = "btn-id"
+
     li.id = newToDoObj.id;
     span.innerText = newToDoObj.text + " ";
     button.innerText = "X";

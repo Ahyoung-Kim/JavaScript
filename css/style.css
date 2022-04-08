@@ -1,3 +1,9 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .hidden {
     /*클래스 이름*/
     /*요소 숨기기*/
@@ -11,104 +17,105 @@
 
     max-width: 100%;
     min-width: 1880px;
+
     max-height: 1400px;
     min-height: 1200px;
+
     z-index: -5;
     filter: brightness(50%);
 }
 
-#login-form {
+#clock {
+    display: block;
+    color: #f8f8f8;
+    text-shadow: 10px 10px 20px violet;
+    font-size: 30px;
     text-align: center;
-    color: white;
-    margin: 0 auto;
-    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+
+#login-form {
+    width: 400px;
+    margin: 50px auto;
+    text-align: center;
 }
 
 #login-form input:first-child {
-    text-align: center;
-    font-size: 1.5em;
-    padding: 10px;
     width: 240px;
-    background-color: rgba(255, 255, 255, 0.5);
-    transition: all, 0.4s;
-    color: white;
-}
-
-#login-form input:hover {
+    height: 30px;
+    font-size: 22px;
     background-color: rgba(255, 255, 255, 0.5);
 }
 
 #login-form input:last-child {
-    color: gray;
-    font-size: 1.5em;
-    padding: 10px;
-    width: 90px;
-    background-color: rgba(255, 255, 255, 0.7);
-    transition: all, 0.4s;
+    width: 80px;
+    height: 33px;
+    font-size: 22px;
+    background-color: rgba(113, 113, 111, 0.7);
 }
 
 #greeting {
-    font-size: 3em;
-    color: rgba(255, 255, 255, 0.8);
-    text-shadow: 5px 5px 3px black;
+    font-size: 50px;
     text-align: center;
-    height: 200px;
-}
-
-#clock {
-    text-align: center;
-    height: 150px;
-    color: rgba(255, 255, 255, 0.7);
-    text-shadow: 5px 5px 3px black;
-    margin: 10px;
-    padding: 10px;
-    font-size: 3em;
+    color: #dfd5e4;
+    text-shadow: 10px 10px 20px #9e62c2;
 }
 
 #todo-form {
+    margin: 50px auto 0;
     text-align: center;
-    color: white;
-    margin: 0 auto;
 }
 
-#todo-form input{
-    text-align: center;
-    font-size: 1.5em;
-    font-weight: 500;
-    padding: 10px;
-    width: 500px;
-    height: 40px;
-    color: white;
+#todo-form input {
+    width: 300px;
+    height: 30px;
+    font-size: 20px;
     background-color: rgba(255, 255, 255, 0.5);
+    color: gray;
+}
+
+#login-form input:first-child:hover, #todo-form input:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#login-form input:last-child:hover {
+    background-color: rgba(113, 113, 111, 1);
 }
 
 #todo-list {
     text-align: center;
-    color: white;
+    margin: 30px auto;
+    width: 300px;
+    font-size: 20px;
+    color: #c9d7d6;
+    font-weight: bold;
+    text-shadow: 10px 10px 20px skyblue;
 }
 
-#todo-list li:hover{
-    text-align: center;
+#todo-list li {
+    line-height: 30px;
+}
+
+#btn-id {
+    background-color: rgba(113, 113, 111, 0.7);
 }
 
 #quote {
+    display: block;
+    margin: 200px auto 0;
     text-align: center;
-    color: white;
-    position: fixed;
-    bottom: 20px;
-    font-size: 0.8em;
-    font-weight: 200;
+    color: #e2efe4;
+    font-size: 20px;
+    text-shadow: 10px 10px 20px #66a26c;
 }
 
 #weather {
-    color: white;
-    position: fixed;
-    top: 20px;
-    right: 36px;
-    font-size: 0.8em;
-    font-weight: 700;
-}
-
-#weather:hover{
-    color: blue;
+    color: #fcf9d1;
+    text-shadow: 10px 10px 20px #e6de45;
+    font-size: 16px;
+    position: absolute;
+    right: 30px;
+    top: 30px;
 }
